@@ -25,7 +25,7 @@ export default function Sidebar() {
       <Toolbar />
       <List>
         <ListItem>
-          <ListItemText primary="수온이💧" primaryTypographyProps={{ fontWeight: 'bold' }} />
+          <ListItemText primary="수온이이💧" primaryTypographyProps={{ fontWeight: 'bold' }} />
         </ListItem>
 
         <ListItem>

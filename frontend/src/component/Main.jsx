@@ -77,7 +77,7 @@ function Main(props) {
         <Avatar sx={{ width: 70, height: 70, bgcolor: 'primary.light' }}>어</Avatar>
         <Box>
           <Typography variant="h5" fontWeight="700" color="primary.dark">
-            어업종사자
+            어업종사자!
           </Typography>
           <Typography variant="body1" color="text.secondary" sx={{ mt: 0.5 }}>
             fish@naver.com
