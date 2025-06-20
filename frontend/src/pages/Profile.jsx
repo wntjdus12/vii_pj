@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../component/Header';
 import { Box, Typography, Button, Grid, Paper } from '@mui/material';
-import fisher from "../assets/fisher.png";
+import fisherImg from "../assets/fisher.png";
 import communityImg from '../assets/community.png';
 import expertImg from '../assets/expert.png';
 import studentImg from '../assets/student.png';
