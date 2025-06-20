@@ -74,7 +74,7 @@ function Main(props) {
           boxShadow: '0 8px 20px rgba(0,0,0,0.1)',
         }}
       >
-        <Avatar sx={{ width: 70, height: 70, bgcolor: 'primary.light' }}>어</Avatar>
+        <Avatar sx={{ width: 70, height: 70, bgcolor: 'primary.light' }}>어어</Avatar>
         <Box>
           <Typography variant="h5" fontWeight="700" color="primary.dark">
             어업종사자!
