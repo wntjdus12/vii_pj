@@ -7,13 +7,11 @@ import expertImg from '../assets/expert.png';
 import studentImg from '../assets/student.png';
 import { useNavigate } from 'react-router-dom';
 
-
-
 const roles = [
-  { label: '어업종사자', img:fisherImg , path:'./home' },
-  { label: '학생', img: studentImg, path:'./home' },       
-  { label: '지역 주민', img: communityImg, path:'./home'},
-  { label: '연구원 / 전문가', img: expertImg, path:'./home' },
+  { label: '어업종사자', path: './home' },
+  { label: '학생', path: './home' },
+  { label: '지역 주민', path: './home' },
+  { label: '연구원 / 전문가',  path: './home' },
 ];
 
 function Profile(props) {
@@ -56,7 +54,7 @@ function Profile(props) {
                   '&:hover': { backgroundColor: '#f0f0f0', cursor: 'pointer' },
                 }}
               >
-                <img src={role.img} alt={role.label} width={160} height={160} />
+                
                 <Typography mt={1}>{role.label}</Typography>
               </Paper>
             </Grid>
