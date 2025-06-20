@@ -68,7 +68,7 @@ function Profile(props) {
           fullWidth
           sx={{ mt: 4, backgroundColor: '#4f83cc', borderRadius: 6 }}
         >
-          입장
+          입장~
         </Button>
       </Box>
     </Box>
