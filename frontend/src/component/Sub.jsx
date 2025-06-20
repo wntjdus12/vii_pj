@@ -39,7 +39,7 @@ export default function Sidebar() {
 
         <ListItem button>
           <ListItemIcon><SettingsIcon sx={{ color: '#1976d2' }} /></ListItemIcon>
-          <ListItemText primary="환경설정" />
+          <ListItemText primary="환경설정." />
         </ListItem>
 
         <ListItem>

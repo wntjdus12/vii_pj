@@ -11,4 +11,3 @@ uvicorn==0.21.1
 fastapi
 uvicorn[standard]
 motor
-fastapi-utils
