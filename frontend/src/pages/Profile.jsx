@@ -1,10 +1,10 @@
 import React from 'react';
 import Header from '../component/Header';
 import { Box, Typography, Button, Grid, Paper } from '@mui/material';
-import fisherImg from "../assets/fisher.png";
-import communityImg from '../assets/community.png';
-import expertImg from '../assets/expert.png';
-import studentImg from '../assets/student.png';
+import fisherImg from "/work/vi_pro/vii_pj/frontend/src/assets/fisher.png";
+import communityImg from '/work/vi_pro/vii_pj/frontend/src/assets/community.png';
+import expertImg from '/work/vi_pro/vii_pj/frontend/src/assets/expert.png';
+import studentImg from '/work/vi_pro/vii_pj/frontend/src/assets/student.png';
 import { useNavigate } from 'react-router-dom';
 
 
