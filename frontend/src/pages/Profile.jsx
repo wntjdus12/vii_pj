@@ -1,17 +1,13 @@
 import React from 'react';
 import Header from '../component/Header';
 import { Box, Typography, Button, Grid, Paper } from '@mui/material';
-import fisherImg from '../assets/fisher.png';
-import communityImg from '../assets/community.png';
-import expertImg from '../assets/expert.png';
-import studentImg from '../assets/student.png';
 import { useNavigate } from 'react-router-dom';
 
 const roles = [
-  { label: '어업종사자', path: './home' },
-  { label: '학생', path: './home' },
-  { label: '지역 주민', path: './home' },
-  { label: '연구원 / 전문가',  path: './home' },
+  { label: '어업종사자', img: '/assets/fisher.png', path: './home' },
+  { label: '학생', img: '/assets/student.png', path: './home' },
+  { label: '지역 주민', img: '/assets/community.png', path: './home' },
+  { label: '연구원 / 전문가', img: '/assets/expert.png', path: './home' },
 ];
 
 function Profile(props) {
@@ -54,7 +50,7 @@ function Profile(props) {
                   '&:hover': { backgroundColor: '#f0f0f0', cursor: 'pointer' },
                 }}
               >
-                
+                <img src={role.img} alt={role.label} width={160} height={160} />
                 <Typography mt={1}>{role.label}</Typography>
               </Paper>
             </Grid>
