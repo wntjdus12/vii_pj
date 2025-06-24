@@ -2,9 +2,8 @@ import React from 'react';
 import "../App.css";
 import Sub from '../component/Sub'
 import Grid from '@mui/material/Grid';
-import Main from '../component/Main';
-import Fish from '../component/Fish';
-import Humidity from '../component/Humidity';
+import Lomain from '../lo_component/Lomain';
+
 
 
 function Home(props) {
@@ -15,9 +14,7 @@ function Home(props) {
                     <Sub/>
                 </Grid>
                 <Grid size={10}>
-                     <Main/>  
-                     <Fish/>
-                     <Humidity/>
+                    <Lomain/>
                 </Grid>
                 
             </Grid>

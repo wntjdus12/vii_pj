@@ -1,5 +1,4 @@
 import React from 'react';
-import './Main.css'; // 필요하면 여기서 추가 스타일도 가능
 import Grid from '@mui/material/Grid';
 import {
   Box,
@@ -10,26 +9,15 @@ import {
   Stack,
   Fab,
 } from '@mui/material';
-import AddIcon from '@mui/icons-material/Add';
-import TemperatureChart from './TemperatureChart';
-import CurrentWeatherBox from './CurrentWeatherBox';
-import SafetyGuideTable from './SafetyGuideTable';
-import ForecastWarning from './ForecastWarning';
-import HumidityRainAlert from './HumidityRainAlert';
-import Mong from './Mong';
 
-
-
-
-
-function Main(props) {
+function Exmain(props) {
   return (
     <Box sx={{ bgcolor: '#f5f8ff', minHeight: '100vh', p: 3, position: 'relative' }}>
       {/* 상단 배경 헤더 */}
 <Box
   sx={{
     height: 160,
-    backgroundImage: 'url("/assets/oll.webp")',
+    backgroundImage: 'url("/assets/goo.webp")',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     borderRadius: 4,
@@ -67,10 +55,10 @@ function Main(props) {
           boxShadow: '0 8px 20px rgba(0,0,0,0.1)',
         }}
       >
-        <Avatar sx={{ width: 70, height: 70, bgcolor: 'primary.light' }}>어</Avatar>
+        <Avatar sx={{ width: 70, height: 70, bgcolor: '#84a98c' }}>연</Avatar>
         <Box>
-          <Typography variant="h5" fontWeight="700" color="primary.dark">
-            어업종사자!
+          <Typography variant="h5" fontWeight="700" color="#84a98c">
+            연구원 / 전문가
           </Typography>
           <Typography variant="body1" color="text.secondary" sx={{ mt: 0.5 }}>
             fish@naver.com
@@ -83,12 +71,12 @@ function Main(props) {
               variant="outlined"
               size="small"
               sx={{
-                borderColor: 'primary.main',
-                color: 'primary.main',
+                borderColor: '#84a98c',
+                color: '#84a98c',
                 fontWeight: '600',
                 '&:hover': {
-                  bgcolor: 'primary.light',
-                  borderColor: 'primary.dark',
+                  bgcolor: '#84a98c',
+                  borderColor: '#84a98c',
                 },
               }}
             >
@@ -115,20 +103,7 @@ function Main(props) {
               🌡️ 실시간 온습도 측정
             </Typography>
           </Box>
-        <Box sx={{ display: 'flex', justifyContent: 'space-around', padding: '40px'}}>
-              <CurrentWeatherBox />
-          <Grid>
-            <Grid item xs={6} md={12}>
-              <SafetyGuideTable />
-            </Grid>
-            <Grid item xs={6} md={6}>
-              <ForecastWarning />
-            </Grid>
-          </Grid>
-        </Box>
-        <Grid item xs={6} md={6}>
-          <Mong />
-        </Grid>
+        
 
       {/* 온도 차트 컴포넌트 */}
       
@@ -138,4 +113,4 @@ function Main(props) {
   );
 }
 
-export default Main;
+export default Exmain;

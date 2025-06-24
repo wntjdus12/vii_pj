@@ -2,12 +2,11 @@ import React from 'react';
 import "../App.css";
 import Sub from '../component/Sub'
 import Grid from '@mui/material/Grid';
-import Main from '../component/Main';
-import Fish from '../component/Fish';
-import Humidity from '../component/Humidity';
+import Exmain from '../ex_component/Exmain';
 
 
-function Home(props) {
+
+function Expert(props) {
     return (
         <div>
             <Grid container spacing={2}>
@@ -15,9 +14,7 @@ function Home(props) {
                     <Sub/>
                 </Grid>
                 <Grid size={10}>
-                     <Main/>  
-                     <Fish/>
-                     <Humidity/>
+                    <Exmain/>  
                 </Grid>
                 
             </Grid>
@@ -25,4 +22,4 @@ function Home(props) {
     );
 }
 
-export default Home;
+export default Expert;

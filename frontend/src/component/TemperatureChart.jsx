@@ -68,7 +68,6 @@ const LineChart = () => {
 
   return (
     <div style={{ width: '90%', maxWidth: '700px', margin: 'auto' }}>
-      <h2 style={{ textAlign: 'center' }}>📈 실시간 온습도 모니터링</h2>
       <Line data={chartData} options={chartOptions} />
     </div>
   );

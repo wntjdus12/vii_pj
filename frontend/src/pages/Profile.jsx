@@ -5,9 +5,9 @@ import { useNavigate } from 'react-router-dom';
 
 const roles = [
   { label: '어업종사자', img: '/assets/fisher.png', path: './home' },
-  { label: '학생', img: '/assets/student.png', path: './home' },
-  { label: '지역 주민', img: '/assets/community.png', path: './home' },
-  { label: '연구원 / 전문가', img: '/assets/expert.png', path: './home' },
+  { label: '연구원 / 전문가', img: '/assets/expert.png', path: './expert' },
+  { label: '지역 주민', img: '/assets/community.png', path: './local' },
+  
 ];
 
 function Profile(props) {

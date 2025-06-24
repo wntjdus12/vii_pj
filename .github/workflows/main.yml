@@ -58,6 +58,17 @@ jobs:
             echo "Stopping and removing old containers..."
             docker rm -f backend || true
             docker rm -f frontend || true
+            docker rm -f mongo || true   # ✅ 기존 MongoDB 제거
+
+            echo "Running MongoDB container..."
+            docker run -d \
+              --name mongo \
+              --restart unless-stopped \
+              -p 27017:27017 \
+              -v /data/mongo:/data/db \
+              -e MONGO_INITDB_ROOT_USERNAME=admin \
+              -e MONGO_INITDB_ROOT_PASSWORD=admin123 \
+              mongo:6.0
 
             echo "Running backend container on port 5000..."
             docker run -d \
